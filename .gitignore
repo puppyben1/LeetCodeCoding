@@ -1,3 +1,7 @@
-# 项目排除路径
-/out/
-/.idea/
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# 编译输出
+out/
+*.class

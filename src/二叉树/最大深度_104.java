@@ -73,9 +73,19 @@ public class 最大深度_104 {
         }
 
         public static void main(String[] args){
-                    Integer[] res=new Integer[]{1,null,2};
-                    TreeNode root=createTree(res);
-                    System.out.println(maxDepth(root));
+                    // 例子1：{1, null, 2} —— 只有一个右孩子，深度 2
+                    Integer[] res1=new Integer[]{1,null,2};
+                    TreeNode root1=createTree(res1);
+                    System.out.print("例子1 树结构: ");
+                    printTree(root1);
+                    System.out.println("最大深度 = " + maxDepth(root1));
+
+                    // 例子2：LeetCode 标准样例 {3,9,20,null,null,15,7} —— 深度 3
+                    Integer[] res2=new Integer[]{3,9,20,null,null,15,7};
+                    TreeNode root2=createTree(res2);
+                    System.out.print("例子2 树结构: ");
+                    printTree(root2);
+                    System.out.println("最大深度 = " + maxDepth(root2));
         }
     }
 }
