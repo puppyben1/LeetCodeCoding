@@ -1,6 +1,6 @@
 # LeetCodeCoding 刷题进度
 
-> 共 **83** 题 · 已完成 **0** · 简单 21 · 中等 52 · 困难 9 · 无题号 1
+> 共 **85** 题 · 已完成 **0** · 简单 21 · 中等 54 · 困难 9 · 无题号 1
 
 勾选 `- [x]` 记录已完成。每题文件自带 `main`，IDEA 中右键直接运行。
 
@@ -9,7 +9,7 @@
 | 主题 | 题数 | 简单 | 中等 | 困难 | 进度 |
 |---|---|---|---|---|---|
 | 普通数组 | 9 | 2 | 6 | 1 | - [ ] 0/9 |
-| 链表 | 18 | 6 | 10 | 2 | - [ ] 0/18 |
+| 链表 | 20 | 6 | 12 | 2 | - [ ] 0/20 |
 | 二叉树 | 12 | 6 | 5 | 1 | - [ ] 0/12 |
 | 二分查找 | 9 | 2 | 6 | 1 | - [ ] 0/9 |
 | 动态规划 | 13 | 2 | 11 | 0 | - [ ] 0/13 |
@@ -37,7 +37,7 @@
 | - [ ] | [169](https://leetcode.cn/problems/majority-element/) | 多数元素 | 简单 | `多数元素_169.java` |
 | - [ ] | [560](https://leetcode.cn/problems/subarray-sum-equals-k/) | 和为K的子数组 | 中等 | `和为K的子数组_560.java` |
 
-## 链表 (18)
+## 链表 (20)
 
 | 完成 | 题号 | 题目 | 难度 | 源文件 |
 |---|---|---|---|---|
@@ -59,6 +59,8 @@
 | - [ ] | [206](https://leetcode.cn/problems/reverse-linked-list/) | 反转链表 | 简单 | `反转链表_206.java` |
 | - [ ] | [234](https://leetcode.cn/problems/palindrome-linked-list/) | 回文链表 | 简单 | `回文链表_234.java` |
 | - [ ] | [328](https://leetcode.cn/problems/odd-even-linked-list/) | 奇偶链表 | 中等 | `奇偶链表_328.java` |
+| - [ ] | [287](https://leetcode.cn/problems/find-the-duplicate-number/) | 寻找重复数 | 中等 | `寻找重复数_287.java` |
+| - [ ] | [378](https://leetcode.cn/problems/kth-smallest-element-in-a-sorted-matrix/) | 有序矩阵中第K小的元素 | 中等 | `有序矩阵中第K小的元素_378.java` |
 
 ## 二叉树 (12)
 
