@@ -1,5 +1,29 @@
 package 链表;
 
+/*
+ * 234. 回文链表（Palindrome Linked List）
+ *
+ * 题目：给你一个单链表的头节点 head，请你判断该链表是否为回文链表。
+ *      如果是，返回 true ；否则，返回 false 。
+ *
+ * 示例：
+ *   输入：head = [1,2,2,1]
+ *   输出：true
+ *   输入：head = [1,2]
+ *   输出：false
+ *
+ * 思路：快慢指针找中点 → 反转后半段 → 双指针逐节点比较。
+ *   1) fast 从 head.next 起步，slow 从 head 起步，slow 最终落在「偏左的中点」；
+ *   2) 从 slow.next 切开，反转后半段得到 revHeadB；
+ *   3) head 和 revHeadB 同步前进比较值。
+ *   因为前半段长度 >= 后半段，所以循环条件写成 head != null && revHeadB != null，
+ *   后半段先走完就返回 true（奇数长度时中间那个节点无需比较）。
+ *
+ * 进阶：O(n) 时间 + O(1) 空间 —— 就是本解法。
+ *   （若允许改链表可以这样写；要求「恢复原链表」时，比较完再把后半段反转接回去。）
+ *
+ * 复杂度：时间 O(n)，空间 O(1)。
+ */
 public class 回文链表_234 {
     static class Solution{
         static class ListNode{

@@ -21,6 +21,9 @@ public class 快速排序 {
           QS(nums,i+1,right);
         }
 
+
+
+
         public static void main(String[] args){
             int[] test1=new int[]{3,2,4,5,1};
             System.out.println(Arrays.toString(QuickSort(test1)));

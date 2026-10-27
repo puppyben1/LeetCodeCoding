@@ -1,7 +1,30 @@
 package 链表;
 
-//给你一个链表，请你两两交换其中相邻的节点，并返回交换后链表的头节点。
-//必须在不修改节点内部值的情况下完成本题，只能进行节点交换。
+import java.util.List;
+
+/*
+ * 24. 两两交换链表中的节点（Swap Nodes in Pairs）
+ *
+ * 题目：给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。
+ *      你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。
+ *
+ * 示例：
+ *   输入：head = [1,2,3,4]
+ *   输出：[2,1,4,3]
+ *   输入：head = []
+ *   输出：[]
+ *   输入：head = [1]
+ *   输出：[1]
+ *
+ * 思路：哑节点 + 三个指针。
+ *   每轮让 a = p.next，b = a.next（即本次要交换的两个节点），next = b.next：
+ *     p.next = b;  b.next = a;  a.next = next;
+ *   交换后本对的尾节点是 a，令 p = a 继续下一对。
+ *   循环条件是 p.next != null && p.next.next != null —— 保证后面至少还有两个节点；
+ *   奇数个节点时，末尾那个自然留在原位。
+ *
+ * 复杂度：时间 O(n)，空间 O(1)。
+ */
 public class 两两交换链表中的节点_24 {
     static class Solution{
         static class ListNode{
@@ -54,7 +77,6 @@ public class 两两交换链表中的节点_24 {
                 p=a;
             }return dum.next;
         }
-
         public static void main(String[] args){
             int[] vals=new int[]{1,2,3,4,5,6,7};
             ListNode test=createLinkedList(vals);
