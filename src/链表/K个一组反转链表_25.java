@@ -62,22 +62,23 @@ public class K个一组反转链表_25 {
             }
         }
         static ListNode reverseKGroup(ListNode head, int k){
-            ListNode dum=new ListNode();
+            ListNode dum = new ListNode();
             dum.next = head;
-            ListNode start = dum,end = dum;
-            while(end!=null){
-                for(int i=0;i<k;i++){
+            ListNode end = dum,start =dum;
+            while(end !=null){
+                for(int i =0;i<k;i++){
                     end=end.next;
-                    if(end==null) break;
+                    if(end ==null) break;
                 }
-                if(end==null) break;
-                ListNode trueStart=start.next;
-                ListNode next=end.next;
-                end.next=null;
+                if(end == null) break;
+                ListNode trueStart = start.next;
+                start.next =null;
+                ListNode next = end.next;
+                end.next = null;
                 start.next=reverse(trueStart);
-                trueStart.next=next;
-                start=trueStart;
+                trueStart.next = next;
                 end=trueStart;
+                start=trueStart;
             }
             return dum.next;
         }
